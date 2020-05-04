@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
+import Constants from './constants';
 import './App.css';
+
+import Home from './views/home/home';
+import SignUp from './views/signup/signup';
+import Contribute from './views/contribute/contribute';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+      <Switch>
+        <Route exact path={Constants.PATHS.HOME} component={Home} />
+        <Route exact path={Constants.PATHS.APIKEY} component={SignUp} />
+        <Route exact path={Constants.PATHS.CONTRIBUTE} component={Contribute} />
+      </Switch>
     </div>
   );
 }
