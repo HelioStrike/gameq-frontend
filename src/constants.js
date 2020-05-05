@@ -20,4 +20,7 @@ module.exports = Object.freeze({
         GITHUB: 'Github',
         ADDDATA: 'Add Data',
     },
+    URL: {
+        SIGNUP: 'http://localhost:3001/signup'
+    },
 });

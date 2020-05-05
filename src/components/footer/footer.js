@@ -33,7 +33,7 @@ function Footer() {
                         <Link href={Constants.PATHS.PRIVACYPOLICY}>{Constants.SCREENS.PRIVACYPOLICY}</Link>
                     </Grid>
                     <Grid item  container direction="column" alignItems="center" justify="center" xs={4}>
-                        <Typography className={classes.subheading} variant="p">
+                        <Typography className={classes.subheading}>
                             Made by 
                         </Typography>                            
                     </Grid>
