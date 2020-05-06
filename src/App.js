@@ -7,6 +7,7 @@ import './App.css';
 import Home from './views/home/home';
 import SignUp from './views/signup/signup';
 import Contribute from './views/contribute/contribute';
+import AddData from './views/data/addData/addData';
 import NotFound from './views/notFound/notFound';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path={Constants.PATHS.HOME} component={Home} />
         <Route exact path={Constants.PATHS.APIKEY} component={SignUp} />
         <Route exact path={Constants.PATHS.CONTRIBUTE} component={Contribute} />
+        <Route exact path={Constants.PATHS.ADDDATA} component={AddData} />
         <Route component={NotFound} />
       </Switch>
     </div>

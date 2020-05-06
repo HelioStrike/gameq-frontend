@@ -35,7 +35,7 @@ export default function Navigation() {
                         </Link>
                     </Typography>
                     <div className={classes.spacer}></div>
-                    <IconButton href="https://github.com/HelioStrike/gameq-api">
+                    <IconButton target="_blank" href="https://github.com/HelioStrike/gameq-api">
                         <GitHubIcon htmlColor="#ffffff" />
                     </IconButton>
                     <Button className={classes.button} color="inherit" href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Button>

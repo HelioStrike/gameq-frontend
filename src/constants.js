@@ -8,7 +8,8 @@ module.exports = Object.freeze({
         TNC: '/tnc',
         PRIVACYPOLICY: '/privacypolicy',
         GITHUB: 'https://github.com/HelioStrike/gameq-api',
-        ADDDATA: '/adddata',
+        ADDDATA: '/addData',
+        VALIDATEDATA: '/validateData',
     },
     SCREENS: {
         HOME: 'Home',
@@ -19,8 +20,10 @@ module.exports = Object.freeze({
         PRIVACYPOLICY: 'Privacy Policy',
         GITHUB: 'Github',
         ADDDATA: 'Add Data',
+        VALIDATEDATA: 'Validate Data',
     },
     URL: {
-        SIGNUP: 'http://localhost:3001/signup'
+        SIGNUP: 'http://localhost:3001/signup',
+        ADDDATA: 'http://localhost:3001/addData'
     },
 });

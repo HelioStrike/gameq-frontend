@@ -68,6 +68,13 @@ class SignUp extends React.Component {
         });
     }
 
+    resetForm() {
+        this.setState({
+            email: '',
+            desc: ''
+        });
+    }
+
     handleSignup(event) {
         event.preventDefault();
         const email = this.state.email;
@@ -84,6 +91,9 @@ class SignUp extends React.Component {
             this.props.signupDispatch({
                 email: this.state.email,
                 desc: this.state.desc
+            })
+            .then(() => {
+                if(this.props.mailSuccess) this.resetForm(); 
             });
         }
     }
@@ -159,7 +169,7 @@ class SignUp extends React.Component {
 const mapDispatchToProps = dispatch => ({
     signupDispatch: payload => dispatch(signup(payload.email, payload.desc)),
 });
-  
+
 const mapStateToProps = state => ({
     signupLoading: state.auth.signupLoading,
     mailSuccess: state.auth.mailSuccess,

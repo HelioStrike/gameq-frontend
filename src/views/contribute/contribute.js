@@ -53,7 +53,10 @@ function Contribute() {
                             If you have any video game quotes you know of, considering adding it. You can also help by validating waiting quotes.
                         </Typography>
                         <Box m={2} />
-                        <Button variant="contained" color="primary" href={Constants.PATHS.ADDDATA}>{Constants.SCREENS.ADDDATA}</Button>
+
+                        <Button variant="contained" color="primary" target="_blank" href={Constants.PATHS.ADDDATA}>{Constants.SCREENS.ADDDATA}</Button>
+                        <Box m={1} />
+                        <Button variant="contained" color="primary" target="_blank" href={Constants.PATHS.VALIDATEDATA}>{Constants.SCREENS.VALIDATEDATA}</Button>
                     </Grid>
                     <Grid item xs={5}>
                         <img class={classes.imagecover} src="https://cdn.vox-cdn.com/thumbor/Yt1avchDkHqEqJuhYZ3YjKF3kFc=/0x0:1700x960/1200x675/filters:focal(714x344:986x616)/cdn.vox-cdn.com/uploads/chorus_image/image/57514059/mario.0.jpg" />
@@ -69,7 +72,7 @@ function Contribute() {
                             Have programming skills and looking for an open-source project to contribute to? Right this way!
                         </Typography>
                         <Box m={2} />
-                        <Button variant="contained" color="primary" href={Constants.PATHS.GITHUB}>{Constants.SCREENS.GITHUB}</Button>
+                        <Button variant="contained" color="primary" target="_blank" href={Constants.PATHS.GITHUB}>{Constants.SCREENS.GITHUB}</Button>
                     </Grid>
                 </Grid>
             </Container>
