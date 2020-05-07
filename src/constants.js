@@ -2,7 +2,7 @@
 module.exports = Object.freeze({
     PATHS: {
         HOME: '/',
-        DOCS: '/docs',
+        DOCS: 'https://github.com/HelioStrike/gameq-api/blob/master/app/graphql/types/query_type.rb',
         CONTRIBUTE: '/contribute',
         APIKEY: '/signup',
         TNC: '/tnc',

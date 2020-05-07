@@ -34,10 +34,10 @@ export function requestWaitingQuote() {
     };
 };
 
-export function getWaitingQuoteResponse(response) {
+export function getWaitingQuoteResponse(waitingQuote) {
     return {
         type: GET_WAITING_QUOTE_RESPONSE,
-        waitingQuote: response.data.getRandomWaitingquote
+        waitingQuote: waitingQuote
     };
 };
 
@@ -60,10 +60,10 @@ export function requestRandomQuote() {
     };
 };
 
-export function getRandomQuoteResponse(response) {
+export function getRandomQuoteResponse(quote) {
     return {
         type: GET_RANDOM_QUOTE_RESPONSE,
-        quote: response.data.getRandomQuote
+        quote: quote
     };
 };
 
@@ -113,7 +113,7 @@ export function getWaitingQuote() {
         })
         .then(
             response => {
-                dispatch(getWaitingQuoteResponse(response));
+                dispatch(getWaitingQuoteResponse(response.data.getRandomWaitingquote));
             }
         );
     };
@@ -151,8 +151,8 @@ export function getRandomQuote() {
 
         const client = new ApolloClient({
             uri: Constants.URL.GRAPHQL,
-        });
-
+        })
+        
         return client.query({
             query: gql`
             {
@@ -170,7 +170,7 @@ export function getRandomQuote() {
         })
         .then(
             response => {
-                dispatch(getRandomQuoteResponse(response));
+                dispatch(getRandomQuoteResponse(response.data.getRandomQuote));
             }
         );
     };

@@ -24,7 +24,7 @@ function Footer() {
             <Container>
                 <Grid container spacing={3}>
                     <Grid item  container direction="column" alignItems="center" justify="center" xs={4}>
-                        <Link href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Link>
+                        <Link target="_blank" href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Link>
                         <Link href={Constants.PATHS.CONTRIBUTE}>{Constants.SCREENS.CONTRIBUTE}</Link>
                         <Link href={Constants.PATHS.APIKEY}>{Constants.SCREENS.APIKEY}</Link>
                     </Grid>

@@ -38,7 +38,7 @@ export default function Navigation() {
                     <IconButton target="_blank" href="https://github.com/HelioStrike/gameq-api">
                         <GitHubIcon htmlColor="#ffffff" />
                     </IconButton>
-                    <Button className={classes.button} color="inherit" href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Button>
+                    <Button target="_blank" className={classes.button} color="inherit" href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Button>
                     <Button className={classes.button} color="inherit" href={Constants.PATHS.CONTRIBUTE}>{Constants.SCREENS.CONTRIBUTE}</Button>
                     <Button className={classes.button} color="inherit" href={Constants.PATHS.APIKEY}>{Constants.SCREENS.APIKEY}</Button>
                 </Toolbar>

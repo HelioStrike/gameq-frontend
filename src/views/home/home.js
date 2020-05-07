@@ -64,7 +64,7 @@ class Home extends React.Component {
                             </Typography>
                             <Box m={2} />
                             <Box flexDirection="row">
-                                <Button variant="contained" color="primary" href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Button>
+                                <Button target="_blank" variant="contained" color="primary" href={Constants.PATHS.DOCS}>{Constants.SCREENS.DOCS}</Button>
                                 <Box m={2} />
                                 <Button variant="contained" color="primary" href={Constants.PATHS.APIKEY}>{Constants.SCREENS.APIKEY}</Button>
                             </Box>
