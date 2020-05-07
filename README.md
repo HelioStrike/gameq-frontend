@@ -2,7 +2,7 @@
 
 An excuse of a project to familiarize myself with `rails`, `redux` and `graphql`.
 
-Goes along with [gameq-api](https://github.com/HelioStrike/gameq-api);
+You'll need to run [gameq-api](https://github.com/HelioStrike/gameq-api) before you run this.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
