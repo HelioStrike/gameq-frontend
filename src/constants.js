@@ -24,6 +24,8 @@ module.exports = Object.freeze({
     },
     URL: {
         SIGNUP: 'http://localhost:3001/signup',
-        ADDDATA: 'http://localhost:3001/addData'
+        ADDDATA: 'http://localhost:3001/addData',
+        VALIDATEDATA: 'http://localhost:3001/validateData',
+        GRAPHQL: 'http://localhost:3001/graphql'
     },
 });

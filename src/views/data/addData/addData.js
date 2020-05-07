@@ -114,12 +114,6 @@ class AddData extends React.Component {
                     
                     <Box m={2} />
     
-                    <Typography className={classes.grey}>
-                        Typng in your data should show existing options. Please avoid adding duplicate data.
-                    </Typography>
-    
-                    <Box m={2} />
-    
                     <Container>
                         { this.props.addDataSuccess == true? <Alert severity="success">Quote added. Thank you!</Alert>:null }
                         { this.props.addDataSuccess == false? <Alert severity="error">Sorry, some error has occured...</Alert>:null }
